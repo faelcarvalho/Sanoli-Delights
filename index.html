@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanoli Delights | Bakery</title>
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Lobster+Two&display=swap" rel="stylesheet">
+</head>
+
+<body class="">
+  <nav>
+    <div class="container">
+      <a class="logo" href="#home">Sanoli Delights</a>
+
+      <div class="menu">
+        <ul>
+          <li><a onclick="closeMenu()" href="#home">Home</a></li>
+          <li><a onclick="closeMenu()" href="#about">About</a></li>
+          <li><a onclick="closeMenu()" href="#product">Classic Flan</a></li>
+          <li><a onclick="closeMenu()" href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="social-link">
+          <a href="https://www.instagram.com/sanolidelights/" target="_blank">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.6667 2.66675H9.33335C5.65146 2.66675 2.66669 5.65152 2.66669 9.33342V22.6667C2.66669 26.3486 5.65146 29.3334 9.33335 29.3334H22.6667C26.3486 29.3334 29.3334 26.3486 29.3334 22.6667V9.33342C29.3334 5.65152 26.3486 2.66675 22.6667 2.66675Z" stroke="white" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M21.3334 15.1599C21.4979 16.2696 21.3084 17.4029 20.7917 18.3986C20.275 19.3943 19.4575 20.2018 18.4555 20.7061C17.4535 21.2105 16.3179 21.386 15.2104 21.2078C14.1029 21.0296 13.0797 20.5067 12.2865 19.7135C11.4932 18.9202 10.9703 17.8971 10.7921 16.7895C10.6139 15.682 10.7894 14.5464 11.2938 13.5444C11.7981 12.5424 12.6056 11.7249 13.6013 11.2082C14.5971 10.6916 15.7304 10.502 16.84 10.6666C17.9719 10.8344 19.0198 11.3619 19.8289 12.171C20.6381 12.9801 21.1655 14.028 21.3334 15.1599Z" stroke="white" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M23.3333 8.66675H23.3466" stroke="white" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+          </a>
+        </div>
+      </div>
+
+      <button aria-expanded="false" aria-label="Open Menu" onclick="openMenu()" class="open-menu">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 20H30" stroke="#B43257" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M10 12H30" stroke="#B43257" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M10 28L30 28" stroke="#B43257" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+
+      <button aria-expanded="true" aria-label="Close Menu" onclick="closeMenu()" class="close-menu">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+
+      </button>
+
+    </div>
+  </nav>
+
+  <section id="home" class="home">
+    <div class="container">
+      <div class="content">
+        <h1 class="title">A perfect dessert for any occasion</h1>
+        <p>Flan is the perfect dessert for all occasions. It can be served as a comfort food or as an elegant dessert during holidays and special events. Flan tastes great alone, or with fresh fruits like raspberries, strawberries, and blueberries. A garnish of fresh mint is perfect for this simple yet elegant dessert. </p>
+        <a class="btn" href="#contact">Make your wish</a>
+      </div>
+
+      <img src="./img/photo-home.png" alt="Classic Flan pudding image">
+    </div>
+  </section>
+
+  <section id="product" class="product">
+    <div class="container">
+      <h2 class="title">Classic Flan</h2>
+      <div class="content">
+        <p>Although flan is known as a Latin dessert, it is enjoyed all around the world. The first flan was born in Ancient Rome as a savory treat. The addition of honey created a sweet flan which became hugely popular across the Roman Empire. Flan was perfected in Spain where caramelized sugar was added to the recipe. Eventually the recipe traveled to the Americas where it became hugely popular in South America, the Caribbean Islands, Mexico and the United States. Ivie’s classic flan is light and smooth with a creamy, velvety texture and a delicious caramel topping.</p>
+        <img src="./img/photo-1.JPG" alt="Classic Flan pudding image">
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="title">Our Story</h2>
+      <div class="content">
+        <p>Sanoli Delights began in 2019 through the encouragement of a Culinary Institute of America chef who tasted Ivie’s flan at a small gathering of friends. This was the birth of Sanoli Delights. However, Ivie’s love for baking began years before this event. As a young child, she loved baking alongside her mother in their kitchen in Brazil. Using ingredients like fresh eggs, condensed milk, and heavy cream, she learned how to make her delicious flan. Twenty years ago, in the U.S., she perfected the recipe by combining baking techniques from Brazil, the Dominican Republic and the United States. The result is a smooth creamy dessert with a caramel topping that will have you coming back for more. </p>
+        <img src="./img/photo-4.JPG" alt="Classic Flan pudding image">
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="content">
+        <h2 class="title">Contact Us!</h2>
+        <div class="contact-info">
+
+          <ul>
+            <li>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 16.9201V19.9201C22.0011 20.1986 21.9441 20.4743 21.8325 20.7294C21.7209 20.9846 21.5573 21.2137 21.3521 21.402C21.1468 21.5902 20.9046 21.7336 20.6407 21.8228C20.3769 21.912 20.0974 21.9452 19.82 21.9201C16.7428 21.5857 13.787 20.5342 11.19 18.8501C8.77382 17.3148 6.72533 15.2663 5.18999 12.8501C3.49997 10.2413 2.44824 7.27109 2.11999 4.1801C2.095 3.90356 2.12787 3.62486 2.21649 3.36172C2.30512 3.09859 2.44756 2.85679 2.63476 2.65172C2.82196 2.44665 3.0498 2.28281 3.30379 2.17062C3.55777 2.05843 3.83233 2.00036 4.10999 2.0001H7.10999C7.5953 1.99532 8.06579 2.16718 8.43376 2.48363C8.80173 2.80008 9.04207 3.23954 9.10999 3.7201C9.23662 4.68016 9.47144 5.62282 9.80999 6.5301C9.94454 6.88802 9.97366 7.27701 9.8939 7.65098C9.81415 8.02494 9.62886 8.36821 9.35999 8.6401L8.08999 9.9101C9.51355 12.4136 11.5864 14.4865 14.09 15.9101L15.36 14.6401C15.6319 14.3712 15.9751 14.1859 16.3491 14.1062C16.7231 14.0264 17.1121 14.0556 17.47 14.1901C18.3773 14.5286 19.3199 14.7635 20.28 14.8901C20.7658 14.9586 21.2094 15.2033 21.5265 15.5776C21.8437 15.9519 22.0122 16.4297 22 16.9201Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <a href="tel:+18456255150">(845) 745 1175</a>
+            </li>
+            <li>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M22 6L12 13L2 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p>ivie@sanolidelights.com</p>
+            </li>
+            <li>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <p>1815 Route 22 #3, Wingdale, New York</p>
+            </li>
+          </ul>
+          <div class="social-link">
+            <a href="https://www.instagram.com/sanolidelights/" target="_blank">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.6667 2.66675H9.33335C5.65146 2.66675 2.66669 5.65152 2.66669 9.33342V22.6667C2.66669 26.3486 5.65146 29.3334 9.33335 29.3334H22.6667C26.3486 29.3334 29.3334 26.3486 29.3334 22.6667V9.33342C29.3334 5.65152 26.3486 2.66675 22.6667 2.66675Z" stroke="white" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M21.3334 15.1599C21.4979 16.2696 21.3084 17.4029 20.7917 18.3986C20.275 19.3943 19.4575 20.2018 18.4555 20.7061C17.4535 21.2105 16.3179 21.386 15.2104 21.2078C14.1029 21.0296 13.0797 20.5067 12.2865 19.7135C11.4932 18.9202 10.9703 17.8971 10.7921 16.7895C10.6139 15.682 10.7894 14.5464 11.2938 13.5444C11.7981 12.5424 12.6056 11.7249 13.6013 11.2082C14.5971 10.6916 15.7304 10.502 16.84 10.6666C17.9719 10.8344 19.0198 11.3619 19.8289 12.171C20.6381 12.9801 21.1655 14.028 21.3334 15.1599Z" stroke="white" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M23.3333 8.66675H23.3466" stroke="white" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <form class="form" action="./submit.php" method="post">
+        <div>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div>
+          <label for="telephone">Telephone</label>
+          <input type="text" id="telephone" name="telephone" placeholder="(408) 999-9999" required>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="contact@email.com" required>
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea rows="5" id="message" name="message" placeholder="What do you want?" required></textarea>
+        </div>
+        <button class="btn" type="submit">Send message</button>
+      </form>
+    </div>
+  </section>
+
+  </div>
+  </section>
+
+  <footer class="footer">
+    <p>
+      <span>Sanoli Delights</span> © All rights reserved.
+    </p>
+  </footer>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>

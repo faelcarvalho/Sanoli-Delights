@@ -1,0 +1,481 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #fdf8ea;
+  --text-color: #583c35;
+  --primary-color: #b43257;
+  --seconday-color: #ffaec5;
+  --btn-color-hover: #9d2d4d;
+  --dark-color: #282727;
+
+  font-size: 62.5%;
+
+  --nav-height: 7.2rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.6rem;
+  color: var(--text-color);
+
+  text-align: center;
+
+  overflow: overlay;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+  border-radius: 0.4rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: min(50rem, 100%);
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+
+.title {
+  font-size: 3.4rem;
+  line-height: 1.125;
+}
+
+.btn {
+  padding: 1.2rem 1.6rem;
+
+  background: var(--primary-color);
+  border-radius: 0.4rem;
+
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: var(--btn-color-hover);
+}
+
+/* ==================== NAVIGATION ==================== */
+nav {
+  display: flex;
+
+  padding-block: 2rem;
+  background: var(--bg-color);
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  z-index: 100;
+}
+
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: "Lobster Two", cursive;
+  font-size: 2.4rem;
+  color: #ba9141;
+}
+
+nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+nav .menu,
+nav .close-menu {
+  position: fixed;
+}
+
+/* ==================== MENU-EXPANDED ==================== */
+body.menu-expanded {
+  overflow: hidden;
+}
+
+body.menu-expanded > :not(nav) {
+  visibility: hidden;
+}
+
+.menu,
+.close-menu,
+body.menu-expanded .open-menu {
+  opacity: 0;
+  visibility: hidden;
+}
+
+body.menu-expanded .menu,
+body.menu-expanded .close-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.close-menu {
+  display: none;
+}
+
+body.menu-expanded .close-menu {
+  display: block;
+}
+
+.menu {
+  transform: translateY(100%);
+}
+
+body.menu-expanded .menu {
+  top: 0;
+  left: 0;
+  background: var(--primary-color);
+
+  width: 100vw;
+  height: 100vh;
+
+  padding-top: var(--nav-height);
+
+  transition: transform 300ms;
+  transform: translateY(0);
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+
+  margin-block: 8rem;
+
+  font-weight: bold;
+  font-size: 2.4rem;
+  line-height: 3.1rem;
+
+  color: white;
+}
+
+.menu ul li a {
+  color: white;
+}
+
+body.menu-expanded .logo,
+body.menu-expanded nav button {
+  position: relative;
+  z-index: 1;
+}
+
+body.menu-expanded .logo {
+  color: white;
+}
+
+/* ==================== HOME ==================== */
+.home {
+  padding-top: calc(4rem + var(--nav-height));
+  background: var(--bg-color);
+  box-shadow: inset 0 -6rem white;
+}
+
+.home p {
+  margin-block: 1.6rem 2rem;
+  line-height: 1.5;
+}
+
+.home a {
+  display: inline-block;
+  margin-bottom: 3.2rem;
+}
+
+/* ==================== PRODUCT ==================== */
+.product {
+  padding-block: 10rem;
+  text-align: left;
+}
+
+.product p {
+  margin-block: 2rem 3.2rem;
+  line-height: 1.5;
+}
+
+/* ==================== ABOUT ==================== */
+.about {
+  background: var(--bg-color);
+  padding-block: 10rem;
+  text-align: left;
+}
+
+.about p {
+  margin-block: 2rem 3.2rem;
+  line-height: 1.5;
+}
+
+/* ==================== CONTACT ==================== */
+.contact {
+  background: var(--primary-color);
+  padding-block: 10rem;
+  text-align: left;
+  color: white;
+}
+
+.contact .contact-info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+
+  width: fit-content;
+}
+
+.contact .contact-info ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  margin-block: 3.2rem;
+}
+
+.contact .contact-info ul li {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.contact .contact-info a {
+  color: white;
+}
+
+.social-link {
+  align-self: center;
+}
+
+/* ==================== FORM ==================== */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background: white;
+  padding: 3.2rem;
+  border-radius: 4px;
+}
+
+.form label {
+  display: block;
+
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: var(--text-color);
+
+  margin-bottom: 0.4rem;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "DM Sans", sans-serif;
+  background: #f7f7f7;
+  border: 1px solid #ededed;
+  padding: 12px;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem var(--seconday-color);
+}
+
+.form button {
+  font-family: "DM Sans", sans-serif;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+}
+
+/* ==================== FOOTER ==================== */
+.footer {
+  background: var(--dark-color);
+  padding-block: 2.4rem;
+  text-align: center;
+}
+
+.footer p {
+  color: white;
+}
+
+.footer span {
+  font-family: "Lobster Two", cursive;
+}
+/* ==================== RESPONSIVO ==================== */
+@media (min-width: 1024px) {
+  /* ==================== GERAL ==================== */
+  body {
+    font-size: 1.8rem;
+    text-align: left;
+    overflow: initial;
+  }
+
+  .container {
+    width: min(116rem, 100%);
+  }
+
+  .title {
+    font-size: 6rem;
+  }
+
+  .btn {
+    font-size: 1.8rem;
+    padding: 1.6rem 3.2rem;
+  }
+
+  .product,
+  .about,
+  .contact {
+    padding-block: 12rem;
+  }
+
+  /* ==================== NAVIGATION ==================== */
+  nav .container * {
+    margin: 0;
+    padding: 0;
+    visibility: initial;
+    display: initial;
+    opacity: initial;
+    flex-direction: initial;
+    position: initial;
+    font-size: initial;
+    font-weight: initial;
+    line-height: initial;
+    color: initial;
+    transform: initial;
+    background: initial;
+  }
+
+  nav .close-menu,
+  nav .open-menu,
+  nav .social-link {
+    display: none;
+  }
+
+  nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav .logo {
+    font-size: 3.2rem;
+    color: #ba9141;
+  }
+
+  nav .menu ul {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  nav .menu ul li a {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    padding-block: 1.6rem;
+    display: inline-block;
+    position: relative;
+  }
+
+  nav .menu ul li a::after {
+    content: "";
+    display: block;
+    height: 0.19rem;
+    width: 0;
+    background: var(--primary-color);
+    margin-top: 0.4rem;
+    transition: 0.3s;
+    position: absolute;
+  }
+
+  nav .menu ul li a:hover::after {
+    width: 100%;
+  }
+  /* ==================== HOME ==================== */
+  .home {
+    box-shadow: inset 0 -12rem white;
+    padding-top: 9.52rem;
+  }
+
+  .home .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 6rem;
+  }
+
+  .home .content {
+    align-self: flex-end;
+    padding-bottom: 20rem;
+  }
+
+  .home a {
+    margin: 0;
+  }
+
+  /* ==================== PRODUCT ==================== */
+  .product .container .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 6rem;
+  }
+
+  .product .container p {
+    align-self: center;
+    grid-column: 2;
+  }
+
+  .product .container img {
+    grid-row: 1;
+  }
+
+  .product .container .title {
+    margin-bottom: 4rem;
+  }
+
+  /* ==================== ABOUT ==================== */
+  .about .container .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 6rem;
+  }
+
+  .about .container .title {
+    margin-bottom: 4rem;
+  }
+
+  .about .content p {
+    align-self: center;
+  }
+
+  .contact .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 6rem;
+  }
+}
